@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% extends "base.html" %}
+{% block pageheading %} Sign Up {% endblock %}
+{% block main %}
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <meta charset="UTF-8">
+    <title>triggerpage2b2wc</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+</head>
+
+<body>
+    <div class="center-css">
+        <form action="/" method="POST">
+            <div class="form-group">
+                <div class="form-label">key</div>
+                <div class="form-element"><input type="text" name="key" id="key" required></div>
+            </div>
+
+            <div class="form-group">
+                <div class="form-label">height</div>
+                <div class="form-element"><input type="text" name="height" id="height" required></div>
+            </div>
+            <div class="form-group">
+                <div class="form-element"><input type="submit" value="done" id="done"></div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+{% endblock %}

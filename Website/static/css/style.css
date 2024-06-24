@@ -1,0 +1,177 @@
+html {
+  background: #0B0C1E;
+}
+
+body {
+  margin: auto;
+  font-family: 'Abel', sans-serif;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+header, footer {
+  margin: 10px 0;
+  background-color: var(--primary);
+  padding: 1px 10px;
+  font-family: 'Abel', sans-serif;
+  border-radius: 20px;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.06);
+  position: sticky;
+  top: 0;
+}
+
+nav::after,
+nav::before {
+  content: '';
+  left: 0;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
+}
+
+nav::after {
+  --height: 0.0625rem;
+  -webkit-backdrop-filter: blur(2rem) saturate(150%) brightness(2);
+  backdrop-filter: blur(2rem) brightness(2);
+  height: calc(6.25rem * 2 + var(--height));
+  -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 6.25rem,
+      black 6.25rem,
+      black calc(6.25rem + var(--height)),
+      transparent calc(6.25rem + var(--height))
+  );
+  mask-image: linear-gradient(
+      to bottom,
+      transparent 6.25rem,
+      black 6.25rem,
+      black calc(6.25rem + var(--height)),
+      transparent calc(6.25rem + var(--height))
+  );
+  top: calc(100% - 6.25rem - var(--height));
+  z-index: -1;
+}
+
+nav::before {
+  -webkit-backdrop-filter: blur(2rem);
+  backdrop-filter: blur(2rem);
+  bottom: calc(-1 * 6.25rem);
+  -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 6.25rem,
+      black 6.25rem,
+      black calc(6.25rem + var(--height)),
+      transparent calc(6.25rem + var(--height))
+  );
+  mask-image: linear-gradient(
+      to bottom,
+      transparent 6.25rem,
+      black 6.25rem,
+      black calc(6.25rem + var(--height)),
+      transparent calc(6.25rem + var(--height))
+  );
+  top: calc(-1 * 6.25rem);
+  z-index: -2;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+nav a {
+  color: inherit;
+  display: inline-flex;
+  padding: 0.75rem 0.35rem;
+  text-decoration: none;
+  transition: all 200ms ease;
+  font-size: large;
+}
+
+nav a:hover,
+nav a:focus-visible {
+  color: rgba(31, 188, 255, 0.9);
+}
+
+main {
+  background-color: var(--primary);
+  padding: 20px 10px;
+  font-family: 'Abel', sans-serif;
+  border-radius: 20px;
+}
+
+.center-css {
+  padding-top: 5%;
+  text-align: center;
+}
+
+.center-css2 {
+  display: flex;
+  justify-content: center;
+}
+
+
+.colordiv{
+  border: #ec0000;
+  border-width: 10px;
+  background-color: #ec0000;
+  max-width: 100%;
+}
+
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-label {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.form-element input[type="text"],
+.form-element input[type="submit"] {
+  width: 90%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  max-width: 600px;
+}
+
+.form-element input[type="submit"] {
+  background-color: #131313;
+  color: white;
+  cursor: pointer;
+  border-color: transparent;
+}
+
+.form-element input[type="submit"]:hover {
+  background-color: #181818;
+  transition: 0.5s;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 14px;
+  }
+  .form-label {
+    font-size: 16px;
+  }
+  .form-element input[type="text"],
+  .form-element input[type="submit"] {
+    font-size: 14px;
+  }
+}
+
+
+.width-less {
+max-width: 40%;
+padding-left: 29%;
+}

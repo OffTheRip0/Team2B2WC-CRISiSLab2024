@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>2B2WC Alert Website</title>
+    <link rel="stylesheet" type="text/css" href="../static/css/style.css">
+    <link rel="shortcut icon" href="{{ url_for('static', filename='favicon.ico') }}">
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav>
+        
+        <ul>
+            <header> <h1>2B2WC | Tsunami Alerts</h1></header>
+            <li>
+                <!-- Home/Search link -->
+                <a href="/">Signup For Alerts</a>
+            </li>
+            <li>
+                <!-- Add Words link -->
+                <a href="/tsunamiinfo">Tsunami information</a>
+            </li>
+        </ul>
+
+    </nav>
+
+    <main>
+    <div class="center-css">
+        <div class="textdiv">
+            {% block main %}{% endblock %}
+        </div>
+    </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,79 @@
+body {
+    background-color: #131313;
+    color: #FFFFFF;
+    overflow: hidden;
+}
+
+.dash-spinners {
+    display: none !important;
+}
+
+#live-graph .plotly {
+    background-color: #131313 !important;
+    height: 65vh;
+    width: 100vh;
+}
+
+.dash-logo {
+    display: none !important;
+}
+
+#max-value, #temp-value, #current-value, #calibrate-button {
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 250px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.25ch;
+    box-shadow: none;
+    border: transparent;
+}
+
+
+#main-div{
+    border-left: 2px solid #525252;
+    padding-left: 0.7%;
+    height: 200%;
+}
+
+#warning-div {
+    display: none;
+}
+
+#warning-div.warning-visible {
+    display: block;
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+}
+
+
+
+#threshold-input{
+    background-color: #1E1E1E;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px auto;
+    width: 250px;
+    text-align: center;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2.25ch;
+}
+
+
+#raw-pressure-graph{
+    height: 65vh;
+    width: 100vh;
+}
